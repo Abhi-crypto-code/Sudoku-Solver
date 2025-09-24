@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-const Grid = ({ board,handleInput, puzzle, selected, setSelected }) => {
+const Grid = ({ board,handleInput, puzzle, selected, setSelected,greenCount }) => {
     // const board = Array(9).fill().map(() => Array(9).fill(null));
     // const puzzle = Array(9).fill().map(() => Array(9).fill(null));
 
@@ -15,7 +15,7 @@ const Grid = ({ board,handleInput, puzzle, selected, setSelected }) => {
                                     {
                                         row.map((cell, cIdx) => {
                                             const isPrefilled = puzzle[rIdx][cIdx] != null;
-
+                                            const cellIndex = rIdx*9 + cIdx;
 
                                             return (
                                                 <td key={cIdx} className={
@@ -24,7 +24,8 @@ const Grid = ({ board,handleInput, puzzle, selected, setSelected }) => {
                                                         'same-col': selected && cIdx === selected[1],
                                                         'same-box': selected &&
                                                             Math.floor(rIdx / 3) === Math.floor(selected[0] / 3) &&
-                                                            Math.floor(cIdx / 3) === Math.floor(selected[1] / 3)
+                                                            Math.floor(cIdx / 3) === Math.floor(selected[1] / 3),
+                                                            'green': cellIndex < greenCount,
                                                     }
 
                                                     )
