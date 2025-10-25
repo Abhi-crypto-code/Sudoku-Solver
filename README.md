@@ -9,9 +9,6 @@ A React-based Sudoku solver application.
 ## Tech Stack
 
 * React.js
-* HTML
-* CSS
-* JavaScript
 
 ## Installation
 
