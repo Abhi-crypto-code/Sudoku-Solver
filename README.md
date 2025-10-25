@@ -1,29 +1,26 @@
-Sure — here’s a **clean, minimal, professional README.md** version (no emojis, no extra decoration):
+# Sudoku Solver
 
----
-
-````markdown
-# React App
-
-A simple React.js web application deployed on Netlify.
+A React-based Sudoku solver application.
 
 ## Live Demo
+
 [View the Site](https://68fcd5929d3a1cc930267d3f--beautiful-maamoul-d81842.netlify.app/)
 
 ## Tech Stack
-- React.js  
-- HTML  
-- CSS  
-- JavaScript  
-- Netlify
+
+* React.js
+* HTML
+* CSS
+* JavaScript
 
 ## Installation
+
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/Abhi-crypto-code/Sudoku-Solver.git
+cd Sudoku-Solver
 npm install
 npm start
-````
+```
 
 ## Build for Production
 
@@ -35,17 +32,8 @@ This will create a `build/` folder ready for deployment.
 
 ## Deployment
 
-The project is deployed on Netlify using the command:
+The project can be deployed to Netlify by publishing the `build` directory after running `npm run build`.
 
-```bash
-npm run build
-```
+## Project Description
 
-and publishing the `build` directory.
-
-```
-
----
-
-Would you like me to make it slightly more **GitHub-optimized** (add badges, description, or short setup info block)?
-```
+This application allows users to input a Sudoku puzzle and automatically computes a solution using a Sudoku API. The UI is built with React and demonstrates component-based architecture, state management, and asynchronous API handling.
